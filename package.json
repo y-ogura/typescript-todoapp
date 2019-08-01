@@ -1,0 +1,50 @@
+{
+  "name": "typescript-todoapp",
+  "version": "1.0.0",
+  "description": "My geometric Nuxt.js project",
+  "author": "小倉裕一",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "test": "jest",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "nuxt": "^2.8.1",
+    "nuxt-property-decorator": "^2.3.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-standard": ">=13.0.1",
+    "eslint-plugin-import": ">=2.18.2",
+    "eslint-plugin-jest": ">=22.14.0",
+    "eslint-plugin-node": ">=9.1.0",
+    "eslint-plugin-nuxt": ">=0.4.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "postcss-apply": "^0.12.0",
+    "prettier": "^1.18.2",
+    "tailwindcss": "^1.0.5",
+    "vue-jest": "^3.0.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": [
+      "@types/node",
+      "@nuxt/vue-app"
+    ],
+    "paths": { "@/*": [ "./*" ], "~/*": [ "./*" ] },
+    "target": "esnext",
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
+  },
+}
