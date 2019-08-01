@@ -1,13 +1,6 @@
 <template>
   <div>
-    <div class="container">
-      <div>
-        <h1 class="title">
-          typescript-todoapp
-        </h1>
-        <TodoForm />
-      </div>
-    </div>
+    <TodoForm />
   </div>
 </template>
 
