@@ -1,8 +1,18 @@
 <template>
-  <div>
+  <div class="px-4">
+    <the-header class="text-5xl font-thin" />
     <nuxt />
   </div>
 </template>
+
+<script>
+import TheHeader from '@/components/TheHeader'
+export default {
+  components: {
+    TheHeader
+  }
+}
+</script>
 
 <style>
 html {

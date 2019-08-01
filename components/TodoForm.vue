@@ -35,15 +35,14 @@
         </template>
       </BaseRadioGroup>
     </div>
-    <BaseInput
+    <BaseInputDate
       class="flex flex-col justify-start items-start"
-      type="date"
-      name="内容"
       placeholder="タスクを入力してください"
+      :min="today.format('YYYY-MM-DD')"
       :value="limit"
     >
       <label slot="label" class="text-white px-1">期限</label>
-    </BaseInput>
+    </BaseInputDate>
     <div class="flex flex-col justify-start items-start">
       <BaseButton
         class="h-8 w-12 bg-blue-600 flex p-1 items-stretch"
@@ -60,8 +59,10 @@
 </template>
 
 <script lang="ts">
+import moment from 'moment'
 import { Vue, Component } from 'nuxt-property-decorator'
 import BaseInput from '@/components/BaseInput.vue'
+import BaseInputDate from '@/components/BaseInputDate.vue'
 import BaseRadioGroup from '@/components/BaseRadioGroup.vue'
 import BaseRadio from '@/components/BaseRadio.vue'
 import BaseButton from '@/components/BaseButton.vue'
@@ -69,6 +70,7 @@ import BaseButton from '@/components/BaseButton.vue'
 @Component({
   components: {
     BaseInput,
+    BaseInputDate,
     BaseRadioGroup,
     BaseRadio,
     BaseButton
@@ -86,7 +88,8 @@ import BaseButton from '@/components/BaseButton.vue'
 export default class TodoForm extends Vue {
   value: string = ''
   selectValue: string = '1'
-  limit: Date = new Date()
+  today: moment.Moment = moment()
+  limit: string = this.today.format('YYYY-MM-DD')
 }
 </script>
 
