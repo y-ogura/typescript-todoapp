@@ -6,13 +6,12 @@ const localVue = createLocalVue()
 
 describe('components/BaseInput.vue', () => {
   let wrapper:Wrapper<Vue>
-  let value: string = ''
   beforeEach(() => {
     wrapper = mount(BaseInput, {
       localVue,
       propsData: {
         name: 'input',
-        value: value,
+        value: '入力値',
         placeholder: '入力してください',
         type: 'text',
         input: () => {},
