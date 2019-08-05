@@ -14,10 +14,10 @@ describe('components/BaseInput.vue', () => {
         value: '入力値',
         placeholder: '入力してください',
         type: 'text',
-        input: () => {},
-        change: () => {},
-        focus: () => {},
-        blur: () => {}
+        input: jest.fn(),
+        change: jest.fn(),
+        focus: jest.fn(),
+        blur: jest.fn()
       },
       slots: {
         label: '<label class="text-white">備考</label>'
