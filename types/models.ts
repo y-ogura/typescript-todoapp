@@ -1,3 +1,4 @@
 export interface Todo {
-  id: string
+  id: string,
+  title: string
 }
