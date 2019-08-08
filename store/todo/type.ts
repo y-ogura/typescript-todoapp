@@ -14,11 +14,11 @@ export interface RG {
 }
 
 export interface M {
-  set: { payload: Todo[] }
+  set: { payload: Todo }
 }
 
 export interface A {
-  init: { todo:Todo[] }
+  init: { todo:Todo }
 }
 export interface RA {
   'todo/init': A['init']

@@ -7,7 +7,7 @@ export const state = (): S => ({
 
 export const mutations: Mutations<S, M> = {
   set(state, { payload }) {
-    state.Todos = payload
+    state.Todos.push(payload)
   }
 }
 
